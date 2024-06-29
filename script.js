@@ -47,4 +47,3 @@ rollDiceButton.addEventListener('click', () => {
         dice.classList.remove('roll');
     }, 1000); // 1 second for the animation
 });
-
