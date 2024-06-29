@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light background for contrast */
+  margin: 0;
+}
+
+.outer-circle-border {
+  position: relative;
+  width: 700px; /* Adjust size as needed */
+  height: 700px; /* Adjust size as needed */
+  border: 2px solid black; /* Circle border */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Add some space between circles */
+  transform: rotate(var(--rotation));
+}
+
+.circle, .center-circle {
+  width: 90px; /* Diameter of each small circle */
+  height: 90px; /* Diameter of each small circle */
+  border-radius: 50%;
+}
+.circle1, .center-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.circle8, .center-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.circle3, .center-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.circle5, .center-circle {
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+}
+
+.circle-blue {
+  background-color: #3498db; /* Blue */
+}
+
+.circle-green {
+  background-color: #2ecc71; /* Green */
+}
+
+.circle-orange {
+  background-color: #e67e22; /* Orange */
+}
+
+.center-circle {
+  width: 115px; /* Diameter of the center circle (slightly larger) */
+  height: 115px; /* Diameter of the center circle (slightly larger) */
+  background-color: #e74c3c; /* Red */
+}
+
+.circle-purple {
+  background-color: #9b59b6; /* Purple */
+}
+
+.circle-yellow {
+  background-color: #f1c40f; /* Yellow */
+}
+
+.circle-pink {
+  background-color: #ff69b4; /* Pink */
+}
+
+
+/*dice and cheeses*/
+.dice-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.dice.roll {
+  transform: rotate(360deg);
+}
+
+.cheese-holder {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: grab;
+  z-index: 2;
+}
+
+.cheese-holder.dragging {
+  cursor: grabbing;
+}
+
+.player-selection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cheese-holder.yellow { background-color: #FFD700; }
+.cheese-holder.green { background-color: #32CD32; }
+.cheese-holder.blue { background-color: #1E90FF; }
+.cheese-holder.red { background-color: #FF4500; }
+.cheese-holder.purple { background-color: #800080; }
+.cheese-holder.orange { background-color: #FFA500; }
+
+/* Rotate the lines around the circle */
+.line:nth-child(1) { transform: rotate(0deg); }
+.line:nth-child(2) { transform: rotate(60deg); }
+.line:nth-child(3) { transform: rotate(120deg); }
+.line:nth-child(4) { transform: rotate(180deg); }
+.line:nth-child(5) { transform: rotate(240deg); }
+.line:nth-child(6) { transform: rotate(300deg); }
+
+/* Adjust circle positions */
+.line .space:nth-child(1) { left: 10%; }
+.line .space:nth-child(2) { left: 30%; }
+.line .space:nth-child(3) { left: 50%; }
+.line .center { left: 50%; }
+.line .space:nth-child(5) { left: 70%; }
+.line .space:nth-child(6) { left: 90%; }

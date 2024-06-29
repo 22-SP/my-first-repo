@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Circle Layout</title>
+</head>
+<body>
+    <div class="outer-circle-border">
+        <div class="circle-container" style="--rotation: 0deg;">
+            <div class="circle1 circle-blue"></div>
+            <div class="circle circle-green"></div>
+            <div class="circle3 circle-orange"></div>
+            <div class="center-circle circle-red"></div>
+            <div class="circle5 circle-purple"></div>
+            <div class="circle circle-yellow"></div>
+            <div class="circle8 circle-pink"></div>
+        </div>
+        <div class="circle-container" style="--rotation: 30deg;">
+            <div class="circle1 circle-purple"></div>
+            <div class="circle circle-green"></div>
+            <div class="circle3 circle-orange"></div>
+            <div class="center-circle circle-red"></div>
+            <div class="circle5 circle-pink"></div>
+            <div class="circle circle-yellow"></div>
+            <div class="circle8 circle-blue"></div>
+        </div>
+        <div class="circle-container" style="--rotation: 60deg;">
+            <div class="circle1 circle-orange"></div>
+            <div class="circle circle-pink"></div>
+            <div class="circle3 circle-purple"></div>
+            <div class="center-circle circle-red"></div>
+            <div class="circle5 circle-blue"></div>
+            <div class="circle circle-yellow"></div>
+            <div class="circle8 circle-green"></div>
+        </div>
+        <div class="circle-container" style="--rotation: 90deg;">
+            <div class="circle1 circle-yellow"></div>
+            <div class="circle circle-green"></div>
+            <div class="circle3 circle-pink"></div>
+            <div class="center-circle circle-red"></div>
+            <div class="circle5 circle-purple"></div>
+            <div class="circle circle-blue"></div>
+            <div class="circle8 circle-orange"></div>
+        </div>
+        <div class="circle-container" style="--rotation: 120deg;">
+            <div class="circle1 circle-yellow"></div>
+            <div class="circle circle-green"></div>
+            <div class="circle3 circle-blue"></div>
+            <div class="center-circle circle-red"></div>
+            <div class="circle5 circle-pink"></div>
+            <div class="circle circle-orange"></div>
+            <div class="circle8 circle-purple"></div>
+        </div>
+        <div class="circle-container" style="--rotation: 150deg;">
+            <div class="circle1 circle-green"></div>
+            <div class="circle circle-blue"></div>
+            <div class="circle3 circle-orange"></div>
+            <div class="center-circle circle-red"></div>
+            <div class="circle5 circle-purple"></div>
+            <div class="circle circle-pink"></div>
+            <div class="circle8 circle-yellow"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="dice-container">
+            <div class="dice" id="dice">1</div>
+            <button id="roll-dice">Roll Dice</button>
+        </div>
+        <div class="player-selection">
+            <label for="num-players">Number of Players:</label>
+            <select id="num-players">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <button id="start-game">Start Game</button>
+        </div>
+        <div class="cheese-holders">
+            <!-- Placeholder for dynamically added cheese holders -->
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
