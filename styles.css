@@ -6,11 +6,12 @@ body {
   background-color: #f0f0f0; /* Light background for contrast */
   margin: 0;
 }
-
+/** gme board*/
 .outer-circle-border {
   position: relative;
-  width: 700px; /* Adjust size as needed */
-  height: 700px; /* Adjust size as needed */
+  width: 700px; 
+  height: 700px;
+  /** black border for gameboard*/
   border: 5px solid black; /* Circle border */
   border-radius: 50%;
   display: flex;
@@ -33,6 +34,9 @@ body {
   border-radius: 50%;
   border: 2px solid black;
 }
+
+/**2 larger circles*/
+
 .circle1, .center-circle {
   width: 115px;
   height: 115px;
@@ -47,7 +51,7 @@ body {
   border-radius: 50%;
   border: 2px solid black;
 }
-
+/**smaller circles next to centre*/
 .circle3, .center-circle {
   width: 40px;
   height: 40px;
@@ -115,6 +119,7 @@ body {
   transition: transform 1s;
   padding: 10px;
 }
+/**game button */
 
 button {
   margin-top: 10px;

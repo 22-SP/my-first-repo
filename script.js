@@ -1,9 +1,17 @@
+/**
+ * start game function ater chosing the number of players
+ */
+
 document.getElementById('start-game').addEventListener('click', () => {
     const numPlayers = parseInt(document.getElementById('num-players').value, 10);
     const cheeseHoldersContainer = document.querySelector('.cheese-holders');
     cheeseHoldersContainer.innerHTML = ''; // Clear existing holders
 
     const colors = ['yellow', 'green', 'blue', 'red', 'purple', 'orange'];
+
+    /**
+     * Selecting a colored chees/placeholder to compete in the game
+     */
 
     for (let i = 0; i < numPlayers; i++) {
         const cheeseHolder = document.createElement('div');
@@ -12,7 +20,9 @@ document.getElementById('start-game').addEventListener('click', () => {
         cheeseHolder.style.top = '50%';
         cheeseHolder.style.transform = 'translate(-50%, -50%)'; // Center the holders
         cheeseHoldersContainer.appendChild(cheeseHolder);
-
+/**
+ * Placeholder syntax for dragging the pice around the board
+ */
         cheeseHolder.addEventListener('mousedown', (e) => {
             let isDragging = false;
             let offsetX, offsetY;
@@ -38,12 +48,16 @@ document.getElementById('start-game').addEventListener('click', () => {
 
 const dice = document.getElementById('dice');
 const rollDiceButton = document.getElementById('roll-dice');
-
+/**
+ * 
+ * 
+ * dice animation with event listener
+ */
 rollDiceButton.addEventListener('click', () => {
     dice.classList.add('roll');
     setTimeout(() => {
         const randomNumber = Math.floor(Math.random() * 6) + 1;
         dice.textContent = randomNumber;
         dice.classList.remove('roll');
-    }, 1000); // 1 second for the animation
+    }, 1000); // 
 });
